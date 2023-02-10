@@ -1,0 +1,504 @@
+body{
+    background-color: #eff6fc;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    width:100%;
+}
+header{
+    background-color:#645CAA;
+    padding: 10px 10px;
+    overflow: hidden;
+    position:sticky;
+    top:0;
+    z-index: 2;
+}
+header a{
+    color:#f9faf4;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px; 
+    float: left;    
+    font-size: 18px;
+}
+nav {
+    float: right;
+}
+header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+header a:hover {
+    background-color: #5249a6;
+    color: #C0DEFF;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav a.active{
+    background-color: #FFABE1;
+    color: white;
+}
+.intro{
+    overflow:hidden;
+    margin:0;
+    height: 200px;
+    background-color:#FFABE1;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+.intro h1{
+    width: 750px;
+    margin: auto;
+    vertical-align: middle;
+    position:relative;
+    top:20%;
+}
+.intro1{
+    overflow:hidden;
+    margin:0;
+    height: 150px;
+    background-color:#FFABE1;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+.Food img{
+    width:350px;
+    height:350px;
+    vertical-align: middle;
+}
+.Food{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.title{
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    border: 2px dotted #f17a7e;
+    width:fit-content;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+iframe{
+    margin-top: 20px;
+    padding:10px;
+}
+iframe:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.Music{
+    text-align: center;
+}
+.gmpics{
+    width:418px;
+    height:237px;
+    margin-top:10px;
+    vertical-align: middle;
+}
+.gmpics:hover{
+    transform: translateY(-10px);
+    transition: 1s;
+}
+.Games{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+figure{
+    text-align: center;
+}
+.caption{
+    margin-bottom: 0px;
+}
+.cap2{
+    margin-top: 0px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+} 
+.tooltip .tooltiptext {
+    display: none;
+    width: 300px;
+    background-color: #c47dc4;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px ;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 20%;
+    margin-left: -60px;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #c47dc4 transparent;
+}
+.tooltip:hover .tooltiptext {
+    display:block;
+}
+video{
+    display: block;
+    margin: auto;
+    max-width:100%;
+}
+.goals, .song, .genshin, .wants{
+    box-sizing: border-box;
+}
+.goals{
+    width: 64%;
+    height: 300px;
+    border: 3px solid #c5bcf1;
+    border-radius: 15px;
+    float: left;
+    margin: 30px 0 20px 20px;
+    background: url(../images/purple.jpg) no-repeat;
+    background-size: cover;
+}
+.goals ul li{
+    padding:10px;
+    color:#5249a6;
+    font-size:x-large;
+    width: 350px;
+    box-sizing: border-box;
+}
+.cont-goals{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.wants ul li{
+    padding:10px;
+    color:#c066c0;
+    font-size:x-large;
+    width: 350px;
+    box-sizing: border-box;
+}
+.cont-wants{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.column1{
+    margin-right: 50px;
+}
+.column2{
+    margin-left: 50px;
+}
+.column3{
+    margin-left: 80px;
+}
+.column4{
+    margin-right: 50px;
+}
+.goals h2{
+    margin:0;
+    padding: 15px;
+    text-align: center; 
+    color:#5249a6;
+}
+.wants h1{
+    margin:0;
+    padding: 15px;
+    text-align: center; 
+    color:#c066c0;
+}
+.song{
+    width: 500px;
+    height: 150px;
+    border: 3px solid #7c99b1;
+    border-radius: 15px;
+    background: url(../images/blue.jpg);
+    float: right;
+    margin: 30px 10px 0 0;
+}
+h3,h4{
+    margin:0;
+    padding: 5px;
+    text-align: center;
+    color: #095205;
+}
+audio{
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
+.genshin{
+    border: 3px solid #f5676b;
+    border-radius: 15px;
+    width:500px;
+    height: 140px;
+    float:right;
+    margin: 10px 10px 20px 0;
+    background: #fff url(../images/kazu1.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.genshin:hover{
+    background: #fff url(../images/kazu2.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.genshin:active{
+    background: #fff url(../images/kazu3.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.genshin p{
+    float:left;
+    width: 100px;
+    margin-left: 10px;
+    color: #095205;
+}
+.cont-sngshn{
+    height: 300px;
+}
+.wants{
+    clear:both;
+    border: 3px solid #f1d4db;
+    background: url(../images/pink.jpg) no-repeat;
+    background-size: cover;
+    width:98%;
+    height:430px;
+    margin: 20px;
+    border-radius:15px ;
+}
+.babypics{
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+h1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.col1{
+    flex:25%;
+    max-width:25%;
+    padding: 0 5px;
+    margin: 0;
+}
+.col1 img{
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 20px;
+}
+.col1 img:hover{
+    transform: scale(1.2);
+    transition: 1.1s;
+    cursor: pointer;
+}
+.Manila{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding:30px;
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.col2 img{
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.col2 img:hover{
+    transform: scale(1.2);
+    transition: 1.1s;
+    cursor: pointer;
+}
+footer{
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    background-color: #a68ccd;
+    height: 80px;
+    z-index:2;
+}
+.footer-right {
+    float: right;
+}
+.footer-right a{
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    box-sizing: border-box;
+    margin: 15px;
+}
+#facebook {
+	background: url('../images/icons3.png') no-repeat -12px -29px;
+	width: 53px;
+	height: 53px;
+}
+#instagram {
+	background: url('../images/icons3.png') no-repeat -93px -30px;
+	width: 51px;
+	height: 51px;
+}
+#email {
+	background: url('../images/icons3.png') no-repeat -173px -31px;
+	width: 66px;
+	height: 49px;
+}
+#github {
+	background: url('../images/icons3.png') no-repeat -265px -30px;
+	width: 51px;
+	height: 51px;
+}
+#facebook:hover {
+	background: url('../images/icons3.png') no-repeat -12px -107px;
+}
+#instagram:hover{
+	background: url('../images/icons3.png') no-repeat -93px -108px;
+}
+#email:hover {
+	background: url('../images/icons3.png') no-repeat -174px -109px;
+}
+#github:hover {
+	background: url('../images/icons3.png') no-repeat -265px -108px;
+}
+.footerleft #logo{
+    position: fixed;
+    left:30px;
+    bottom:10px;
+    color: #fff;
+    font-weight: bold;
+}
+@media(max-width:400px){
+    .footerleft #logo{
+        position: absolute;
+        left:15px;
+        bottom:0px;
+        width: 150px;
+    }
+}
+@media(max-width:515px){
+    figure{
+        margin-left: 0px;
+    }
+    .caption, .cap2{
+        width: fit-content;
+    }
+    .intro{
+        width:100%;
+    }
+    .intro1{
+        height: auto;
+    }
+}
+@media(max-width:620px){
+    header {
+        text-align: center;
+    }
+    nav{
+       display:inline-block;
+    }
+    iframe{
+        width:90%;
+        height:152;
+        margin: 0px 10px 0;
+        padding-bottom:0px;
+    }
+    .song1{
+        margin-top: 20px;
+    }
+}
+@media(max-width:700px){
+    .intro h1{
+        width: fit-content;
+    }
+    .footer-right a{
+        margin: 10px 5px 5px;
+    }
+    .tooltip .tooltiptext{
+        transform: translateX(20%);
+    }
+    .song, .genshin{
+        clear: left;
+        margin-top: 10px;
+    }
+    .intro{
+        height: auto;
+    }
+}
+@media (max-width: 900px) {
+    .Food {
+      flex-direction: column;
+      text-align: center;
+    }
+    .tooltip .tooltiptext{
+      transform: translateX(50%);
+    }
+}
+@media(max-width:950px){
+    .cont-goals{
+        flex-direction: column;
+    }
+    .column1, .column3{
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+    .column2, .column4{
+        margin-left: 20px;
+        margin-top: 0;
+    }
+    .cont-wants{
+        flex-direction: column;
+    }
+    .goals, .wants{
+        height: fit-content;
+    }
+}
+@media (max-width: 1024px) {
+    .Games {
+      flex-direction: column;
+    }
+}
+@media(max-width:1445px){
+    .goals{
+        width: 97%;
+        margin-right: 20px;
+    }
+    .song{
+        margin:auto;
+        clear: left;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .genshin{
+        margin:auto;
+        clear: left;
+        float: none;
+    }
+}
+@media(max-width:768px){
+    .col2 img:hover{
+        transform: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .Manila {
+      flex-direction: row;
+    }
+  }
